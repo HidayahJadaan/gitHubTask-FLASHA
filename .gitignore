@@ -1,55 +1,19 @@
-# Prerequisites
-*.d
+# Comments start with a hash symbol
+# Blank lines are ignored and used for readability
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Ignore a specific file
+.env
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Ignore an entire directory (trailing slash)
+node_modules/
+dist/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Wildcards (*) match any characters except a slash
+*.log
+*.tmp
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Double asterisks (**) match nested directories recursively
+**/temp/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# Negation (!) re-includes a specific file otherwise ignored
+!important.log
