@@ -1,14 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Task</title>
-</head>
-<body>
-    
-    <h1>Welcome to the Github Task Page From Feature Branch</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Learning Journey</title>
 
-    <button>Click Me</button>
-</body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="./images/logo.png"
+          alt="Learning Journey"
+          class="logo-img"
+          width="150"
+          height="50"
+        />
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#about"> About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#learning"> Learning </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#goals"> Goals </a></li>
+        <button>Get Started</button>
+      </ul>
+    </div>
+
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>My Learning Journey</h1>
+        <p>Every Expert was once a beginner.</p>
+        <a href="#about">Explore My Journey</a>
+      </div>
+
+      <img
+        src="./images/hero2.jpg"
+        alt="Learning and technology"
+        width="250px"
+      />
+    </div>
+
+    <!-- ================================================= -->
+    <div class="container">
+      <div class="about-section" id="about">
+        <h2>About My Learning Journey</h2>
+        <p>
+          My name is Hedaia, and I am Passionate about technology and softeare
+          development. I enjoy discovering new technologies, solving problems,
+          and createing usefull applications.
+        </p>
+        <p>
+          I chose Full-Stack Web Development because it allows me to work on
+          both the frontend and backend of web applications.
+        </p>
+      </div>
+      <!-- ======================================================= -->
+      <div class="learning-section" id="learning">
+        <h2>What I am Leanring?</h2>
+
+        <div class="cards">
+          <div class="card">
+            <img src="./images/card01.jpg" alt="" />
+            <h3>HTML & CSS</h3>
+
+            <p>Building and designing beautiful and responsive web pages.</p>
+          </div>
+          <div class="card">
+            <img src="./images/card02.jpg" alt="" />
+            <h3>JavaScript & React</h3>
+
+            <p>Bbuilding interactive user interfaces.</p>
+          </div>
+          <div class="card">
+            <img src="./images/card01.jpg" alt="" />
+            <h3>C# & ASP.NET</h3>
+
+            <p>Developing backend applications and learning how APIs work.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ====================================================== -->
+
+      <div class="goals-section" id="goals">
+        <h2>My Learning Goals</h2>
+        <ul>
+          <li>Build real-world web applications.</li>
+          <li>Improve my frontend and backend skills.</li>
+          <li>Learn new programming technologies.</li>
+          <li>Work on collaborative projects.</li>
+          <li>Become a professional software developer.</li>
+        </ul>
+
+        <p id="message">I am excited to continue my learning journey!</p>
+
+        <button class="goals-btn" onclick="changeMessage()">Click Me!</button>
+      </div>
+    </div>
+    <!-- ======================================================= -->
+
+    <footer>
+      <p>© 2026 My Learning Journey | Keep Learning, Keep Growing!</p>
+    </footer>
+  </body>
+
+  <script src="./script.js"></script>
 </html>
